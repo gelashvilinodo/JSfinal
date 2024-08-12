@@ -1,0 +1,111 @@
+/* 376px */
+
+@media (max-width: 376px) {
+
+    /* header */
+    header {
+        padding-inline: 8px;
+    }
+
+    .burger,
+    .xMark,
+    .user_pic,
+    .cart_pic {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user_side,
+    .user_cart {
+        column-gap: 16px;
+    }
+
+    /* cover */
+
+    .cover_buttonss {
+        display: none;
+    }
+
+    /* section 3 */
+
+    .guitar_picks {
+        height: 404px;
+        padding-inline: 8px;
+    }
+
+    .forgrid {
+        grid-template-rows: repeat(2, 160px);
+    }
+
+    .pickstext {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* section 4 */
+
+    .cards {
+        padding-top: 32px;
+    }
+
+    .scroll_container {
+        padding: 14px 8px 32px;
+        margin-top: 26px;
+    }
+
+    .cards_title {
+        font-size: 24px;
+    }
+
+    .cards_title::after {
+        width: 156px;
+    }
+
+    /* section 5 */
+
+    .cards2 {
+        padding-block: 32px;
+        padding-left: 8px;
+    }
+
+    .scroll_container2 {
+        margin-top: 40px;
+    }
+
+    .individualcards2 {
+        height: 320px;
+        flex: 0 0 298px;
+    }
+
+    .cards2_hover {
+        top: 220px;
+    }
+
+    /* catalog page  */
+
+    /* section 2 */
+
+    .electric_guitars {
+        padding-block: 32px;
+    }
+
+    /* grid  */
+
+    .catalog_grid_container {
+        margin-block: 40px;
+    }
+
+
+
+    /* footer  */
+
+    footer {
+        padding-block: 32px;
+    }
+
+}

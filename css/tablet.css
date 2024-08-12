@@ -1,0 +1,284 @@
+/* 879px */
+
+@media (max-width: 879px) {
+
+    /* footer  */
+
+    .footer_main_div {
+        width: 100%;
+        padding-inline: 32px;
+        justify-content: space-between;
+        column-gap: 0;
+    }
+
+    /* section 4 */
+
+    .scroll_container {
+        padding-bottom: 48px;
+    }
+
+    /* catalog page  */
+
+    /* section 2 */
+    /* grid  */
+
+    .catalog_grid_container {
+        grid-template-columns: repeat(50%);
+        grid-template-areas: "photo1 photo2"
+            "photo3 photo4"
+            "photo5 photo6"
+            "photo7 photo8";
+    }
+
+    .picture9,
+    .picture10,
+    .picture11,
+    .picture12 {
+        display: none;
+    }
+}
+
+/* 745px */
+
+@media (max-width: 745px) {
+
+    /* header */
+
+    header {
+        padding-inline: 32px;
+    }
+
+    /* cover  */
+
+    .cover {
+        height: 400px;
+        padding-inline: 32px;
+    }
+
+    /* section 3 */
+
+    .guitar_picks {
+        height: 596px;
+        padding-inline: 32px;
+    }
+
+    /* section 4 */
+
+    .cards {
+        padding-block: 48px;
+    }
+
+    /* section 5 */
+
+    .cards2 {
+        padding-block: 48px;
+    }
+
+    /* catalog page  */
+
+    /* section 2 */
+
+    .electric_guitars {
+        padding-block: 48px;
+    }
+
+    .filters_div {
+        padding-inline: 32px;
+    }
+
+    /* grid  */
+
+    .catalog_grid_container {
+        padding-inline: 64px;
+    }
+
+    /* contact page  */
+
+    /* contact section  */
+
+    .contact_section {
+        padding: 48px 64px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_main_container {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+/* 565px */
+
+@media (max-width: 565px) {
+
+    /* header  */
+
+    header {
+        padding-inline: 8px;
+    }
+
+    .burger,
+    .xMark,
+    .user_pic,
+    .cart_pic {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user_side,
+    .user_cart {
+        column-gap: 16px;
+    }
+
+
+
+    /* section 1 */
+
+    .guitar_types {
+        padding-block: 16px;
+    }
+
+    .guitars {
+        padding: 8px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* cover  */
+
+    .coverp,
+    .coverSpan {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* section 6 form  */
+
+    .form_section {
+        height: 168px;
+    }
+
+    .form_title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .home_form_div {
+        width: 320px;
+
+    }
+
+    /* catalog page  */
+
+    /* section 2 */
+
+    .filters_div {
+        padding-inline: 16px;
+    }
+
+    .filterBTNtext,
+    .sorting_text {
+        display: none;
+    }
+
+    /* grid  */
+
+    .catalog_grid_container {
+        padding-inline: 16px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4 400px);
+        grid-template-areas: "photo1"
+            "photo2"
+            "photo3"
+            "photo4";
+    }
+
+    .picture5,
+    .picture6,
+    .picture7,
+    .picture8 {
+        display: none;
+    }
+
+    .pageBTS_text {
+        display: none;
+    }
+
+
+    /* contact page  */
+
+    /* contact section  */
+
+
+    .contact_section {
+        height: 735px;
+        padding: 32px 40px;
+    }
+
+    .form_title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .pin_tel_cont {
+        align-items: center;
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .contact_info {
+        flex-direction: row;
+        column-gap: 24px;
+    }
+
+    .contact_mail,
+    .contact_number {
+        display: none;
+    }
+
+    .adress_pin img {
+        width: 24px;
+    }
+
+    .formtomap {
+        flex-wrap: wrap;
+    }
+
+    .contact_form {
+        width: 100%;
+    }
+
+    .map_container {
+        margin-top: 40px;
+        width: 100%;
+        align-items: center;
+        row-gap: 32px;
+    }
+
+
+
+    /* footer  */
+
+    .footer_main_div {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .footer_divs {
+        align-items: center;
+    }
+
+}
