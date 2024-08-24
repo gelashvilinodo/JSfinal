@@ -4,6 +4,10 @@
 
     /* footer  */
 
+    .dark_mode_icons_burger {
+        display: none;
+    }
+
     .footer_main_div {
         width: 100%;
         padding-inline: 32px;
@@ -125,8 +129,7 @@
 
     .burger,
     .xMark,
-    .user_pic,
-    .cart_pic {
+    .user_pic {
         width: 32px;
         height: 32px;
     }
@@ -136,11 +139,17 @@
         height: 40px;
     }
 
-    .user_side,
-    .user_cart {
+    .user_side {
         column-gap: 16px;
     }
 
+    .dark_mode_icons {
+        display: none;
+    }
+
+    .dark_mode_icons_burger {
+        display: block;
+    }
 
 
     /* section 1 */

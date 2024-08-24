@@ -9,8 +9,7 @@
 
     .burger,
     .xMark,
-    .user_pic,
-    .cart_pic {
+    .user_pic {
         width: 32px;
         height: 32px;
     }
@@ -20,8 +19,7 @@
         height: 40px;
     }
 
-    .user_side,
-    .user_cart {
+    .user_side {
         column-gap: 16px;
     }
 

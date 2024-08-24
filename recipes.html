@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/tablet.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="icon" href="images/wpf_guitar.svg" />
-    <script src="https://kit.fontawesome.com/7867b5371d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7867b5371d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Recipes</title>
   </head>
   <body>
@@ -40,24 +43,11 @@
           <i class="fa-solid fa-burger logo"></i>
         </a>
         <div class="user_side">
-          <img src="images/lucide_search.svg" alt="" class="search" />
-          <div class="lang_currency">
-            <button class="language">
-              En
-              <img src="images/iconamoon_arrow-down-2.svg" alt="" />
-            </button>
-            <button class="currency">
-              USD
-              <img src="images/iconamoon_arrow-down-2.svg" alt="" />
-            </button>
-          </div>
-          <div class="user_cart">
-            <button class="user">
-              <img src="images/Frame 3.svg" alt="" class="user_pic" />
-            </button>
-            <button class="cart">
-              <img src="images/Frame 4.svg" alt="" class="cart_pic" />
-            </button>
+          <button class="user">
+            <img src="images/Frame 3.svg" alt="" class="user_pic" />
+          </button>
+          <div class="dark_mode_icons">
+            <i class="fa-solid fa-sun" id="lightMode"></i>
           </div>
         </div>
         <div class="mobile_menu">
@@ -67,301 +57,29 @@
                 <a href="index.html" class="burger_text">Home</a>
               </li>
               <li>
-                <a href="recipes.html" class="burger_text">Catalog</a>
+                <a href="recipes.html" class="burger_text">Recipes</a>
               </li>
               <li>
                 <a href="contact.html" class="burger_text">Contact Us</a>
               </li>
             </ul>
           </nav>
-          <div class="burger_lang_currency">
-            <button class="burger_buttons">
-              En
-              <img src="images/iconamoon_arrow-down-2forburger.svg" alt="" />
-            </button>
-            <button class="burger_buttons">
-              USD
-              <img src="images/iconamoon_arrow-down-2forburger.svg" alt="" />
-            </button>
+          <div class="dark_mode_icons_burger">
+            <i class="fa-solid fa-sun" id="lightMode"></i>
           </div>
         </div>
       </header>
       <div class="border_div"></div>
-      <!-- section2 -->
-      <section class="electric_guitars">
-        <div class="filters_div">
-          <button class="filterBRN">
-            <span class="filterBTNtext">Filter</span>
-            <img src="images/mingcute_filter-2-fill.svg" alt="" />
-          </button>
-          <div class="sorting">
-            <h4 class="filter_title">Sort by:</h4>
-            <div class="sorting_options">
-              <p class="sorting_text">Best selling</p>
-              <img src="images/iconamoon_arrow-down-2forburger.svg" alt="" />
-            </div>
-          </div>
+      <!-- cards section  -->
+      <section class="recipe_cards">
+        <div class="interaction_for_cards">
+          <input type="text" placeholder="search recipe" id="search" />
+          <select name="category" id="category">
+            <option value="">beef</option>
+          </select>
         </div>
-        <!-- grid  -->
-        <div class="catalog_grid_container">
-          <figure class="new_figures picture1">
-            <img src="images/Rectangle 7.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture2">
-            <img src="images/Rectangle 8.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture3">
-            <img src="images/Rectangle 9.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture4">
-            <img src="images/Rectangle 10.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture5">
-            <img src="images/Rectangle 11.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture6">
-            <img src="images/Rectangle 12.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture7">
-            <img src="images/Rectangle 13.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture8">
-            <img src="images/Rectangle 14.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture9">
-            <img src="images/Rectangle 15.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture10">
-            <img src="images/Rectangle 7.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture11">
-            <img src="images/Rectangle 16.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture12">
-            <img src="images/Rectangle 8.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture13">
-            <img src="images/Rectangle 12.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture14">
-            <img src="images/Rectangle 13.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture15">
-            <img src="images/Rectangle 15.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <figure class="new_figures picture16">
-            <img src="images/Rectangle 11.png" alt="" class="grid_pictures" />
-            <div class="whole_anotation">
-              <figcaption class="cardtext">lorem ipsum</figcaption>
-              <div class="cardanotation">
-                <div class="review">
-                  <img src="images/stars.svg" alt="" />
-                  <p class="reviewtext">4 reviews</p>
-                </div>
-                <div class="pricediv">
-                  <img src="images/bx_dollar.svg" alt="" />
-                  <p class="price">950</p>
-                </div>
-              </div>
-            </div>
-          </figure>
+        <div id="recipeCardContainer">
         </div>
-        <!-- grid ends here  -->
       </section>
       <!-- footer  -->
       <footer>
