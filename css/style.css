@@ -1,5 +1,5 @@
 :root {
-    --mainBGcolor: #012426;
+    --mainBGcolor: #24662b;
     --footercolor: #2C4246;
     --inter: "Inter", sans-serif;
     --mainFsize: 24px;
@@ -10,10 +10,18 @@
     --thirdTextColor: #05BCCA;
 }
 
+body {
+    background-color: var(--mainBGcolor);
+}
+
 .main_container {
     width: min(100%, 1440px);
     margin: auto;
     padding-top: 96px;
+}
+
+.darkmode {
+    background-color: #012426;
 }
 
 /* header  */
@@ -94,21 +102,19 @@ li a:hover {
     background-color: #05BCCA;
     transition: all .1s linear;
     cursor: pointer;
+    border: none;
     border-radius: 8px;
+    color: var(--button_tittlecolor);
+    font-size: 24px;
 }
 
 .dark_mode_icons:hover {
     transform: scale(1.1);
 }
 
-#lightMode {
-    font-size: 24px;
-    color: var(--button_tittlecolor);
-}
-
 .border_div {
     width: 100%;
-    border: 1px solid var(--button_tittlecolor);
+    border: 2px solid var(--button_tittlecolor);
 }
 
 /* for burger  */
@@ -158,8 +164,12 @@ li a:hover {
     height: 100%;
 }
 
-.hide {
+.slider_item {
     display: none;
+}
+
+.show {
+    display: block;
 }
 
 .cover_text {
@@ -223,7 +233,7 @@ li a:hover {
 .guitar_picks {
     padding-inline: 98px;
     height: 692px;
-    background-color: var(--mainBGcolor);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,105 +293,12 @@ li a:hover {
     color: #F5F5F5;
 }
 
-/* section 3 */
-
-.cards {
-    padding-top: 96px;
-    background-color: #1A1A1A;
-}
-
-.cards_title {
-    margin-inline: auto;
-    text-align: center;
-    font-family: var(--inter);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 52px;
-    color: var(--thirdTextColor);
-}
-
-.cards_title::after {
-    content: "";
-    width: 187.27px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--thirdTextColor);
-    display: block;
-    margin-top: 8px;
-    margin-inline: auto;
-}
-
-.scroll_container {
-    padding: 14px 94px 96px;
-    display: flex;
-    column-gap: 20px;
-    margin-top: 50px;
-    overflow-x: scroll;
-    scrollbar-width: none;
-}
-
-.individual_cards {
-    width: 25%;
-    padding: 8px 8px 16px;
-    background-color: var(--footercolor);
-    transition: all .1s linear;
-}
-
-.individual_cards img {
-    width: 100%;
-}
-
-.individual_cards:hover {
-    box-shadow: 0 0 8px 4px rgba(5, 188, 202, 0.8);
-}
-
-.cardtext {
-    margin-block: 16px;
-    font-family: var(--inter);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 27px;
-    color: var(--cardTextColor);
-}
-
-.cardanotation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.review {
-    display: flex;
-    column-gap: 8px;
-}
-
-.reviewtext {
-    font-family: var(--inter);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    color: var(--secondaryTextColor);
-}
-
-.pricediv {
-    display: flex;
-    column-gap: 4px;
-}
-
-.price {
-    font-family: var(--inter);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    color: var(--thirdTextColor);
-}
-
 /* section 4 */
 
 .cards2 {
     height: 756px;
     padding: 96px 94px;
-    background-color: var(--mainBGcolor);
+    background-color: transparent;
     z-index: 3;
 }
 
@@ -501,76 +418,11 @@ li a:hover {
     padding-inline: 6px;
 }
 
-/* section 5 form  */
-
-.form_section {
-    height: 320px;
-    background-image: url("../images/slider4.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form_title {
-    font-family: var(--inter);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 19px;
-    color: var(--thirdTextColor);
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.home_form_div {
-    width: 480px;
-    display: flex;
-    border: 1px solid #F5F5F5;
-    border-radius: 8px;
-}
-
-.home_input {
-    width: 100%;
-    height: 48px;
-    padding: 15px 8px;
-    outline: none;
-    border: none;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: rgba(44, 66, 70, 0.8);
-}
-
-.home_input::placeholder,
-.home_input {
-    font-family: var(--inter);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    color: var(--secondaryTextColor);
-}
-
-.home_form_BTN {
-    border: none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding: 14px;
-    font-family: var(--inter);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    color: #FFFFFF;
-    background-color: var(--thirdTextColor);
-}
-
-/* recipes css  */
-
 /* cards section  */
 
 .recipe_cards {
     padding: 50px 40px;
-    background-color: var(--mainBGcolor);
+    background-color: transparent;
 }
 
 .interaction_for_cards {
@@ -815,7 +667,7 @@ li a:hover {
 footer {
     padding-top: 48px;
     padding-bottom: 64px;
-    background-color: var(--footercolor);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;

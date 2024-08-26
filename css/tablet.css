@@ -144,11 +144,9 @@
     }
 
     .dark_mode_icons {
-        display: none;
-    }
-
-    .dark_mode_icons_burger {
-        display: block;
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
     }
 
 
