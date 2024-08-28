@@ -452,6 +452,9 @@ li a:hover {
     border: none;
     border-radius: 8px;
     outline: 2px solid var(--button_tittlecolor);
+    font-size: 16px;
+    font-family: var(--inter);
+    color: var(--button_tittlecolor);
 }
 
 #recipeCardContainer {
@@ -529,14 +532,15 @@ li a:hover {
 }
 
 .ingredients_div {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
     display: none;
 }
 
 .visible_ingredients {
     display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
 }
 
 .ingredients_p {

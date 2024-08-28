@@ -87,10 +87,8 @@ const getRecipes = async () => {
   return result.recipes;
 };
 
-const createCards = async () => {
-  const recipes = await getRecipes();
+const createCards = async (recipes) => {
   for (let recipe of recipes) {
-    // console.log(recipe);
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("recipe_card");
     recipeContainer.appendChild(cardDiv);
@@ -101,7 +99,6 @@ const createCards = async () => {
     imageDiv.appendChild(recipeImage);
     cardDiv.appendChild(imageDiv);
     recipeImage.src = recipe.image;
-    // hard part
     const recipeTexts = document.createElement("div");
     cardDiv.appendChild(recipeTexts);
     recipeTexts.classList.add("recipe_text_div");
@@ -131,4 +128,48 @@ const createCards = async () => {
     });
   }
 };
-createCards();
+
+const firstRecipes = async () => {
+  const recipes = await getRecipes();
+  createCards(recipes);
+};
+firstRecipes();
+
+// search
+
+const searchButton = document.getElementById("search");
+
+searchButton.addEventListener("keyup", async (e) => {
+  const recipes = await getRecipes();
+  const filteredRecipes = recipes.filter((recipe) =>
+    recipe.name.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  recipeContainer.innerHTML = "";
+  createCards(filteredRecipes);
+});
+
+// sort by category
+
+const sorting = document.getElementById("category");
+
+const findByCuisine = async () => {
+  const recipes = await getRecipes();
+  const cuisine = recipes.map((recipe) => recipe.cuisine);
+  const individualCuisine = Array.from(new Set(cuisine));
+  for (let cuisine of individualCuisine) {
+    const cuisineOption = document.createElement("option");
+    cuisineOption.classList.add("sort_option");
+    sorting.appendChild(cuisineOption);
+    cuisineOption.textContent = cuisine;
+  }
+};
+findByCuisine();
+
+sorting.addEventListener("change", async (e) => {
+  const recipes = await getRecipes();
+  const findCuisine = recipes.filter((recipe) =>
+    recipe.cuisine.includes(e.target.value)
+  );
+  recipeContainer.innerHTML = "";
+  createCards(findCuisine);
+});
