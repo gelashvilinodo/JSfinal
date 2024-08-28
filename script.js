@@ -76,3 +76,59 @@ leftButton.addEventListener("click", () => {
   }
   addShow(activeIndex);
 });
+
+// recipes cards
+
+const recipeContainer = document.getElementById("recipeCardContainer");
+
+const getRecipes = async () => {
+  const response = await fetch("https://dummyjson.com/recipes");
+  const result = await response.json();
+  return result.recipes;
+};
+
+const createCards = async () => {
+  const recipes = await getRecipes();
+  for (let recipe of recipes) {
+    // console.log(recipe);
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("recipe_card");
+    recipeContainer.appendChild(cardDiv);
+    const imageDiv = document.createElement("div");
+    imageDiv.classList.add("recipe_image_div");
+    const recipeImage = document.createElement("img");
+    recipeImage.classList.add("recipe_image");
+    imageDiv.appendChild(recipeImage);
+    cardDiv.appendChild(imageDiv);
+    recipeImage.src = recipe.image;
+    // hard part
+    const recipeTexts = document.createElement("div");
+    cardDiv.appendChild(recipeTexts);
+    recipeTexts.classList.add("recipe_text_div");
+    const recipeTitle = document.createElement("h4");
+    recipeTexts.appendChild(recipeTitle);
+    recipeTitle.classList.add("recipe_name");
+    recipeTitle.textContent = recipe.name;
+    const recipeCategory = document.createElement("h2");
+    recipeTexts.appendChild(recipeCategory);
+    recipeCategory.classList.add("recipe_category");
+    recipeCategory.textContent = `${"cuisine: " + recipe.cuisine}`;
+    const ingredientsButton = document.createElement("button");
+    ingredientsButton.classList.add("ingr_btn");
+    recipeTexts.appendChild(ingredientsButton);
+    ingredientsButton.textContent = "ingredients:";
+    const ingredientsdDiv = document.createElement("div");
+    ingredientsdDiv.classList.add("ingredients_div");
+    recipeTexts.appendChild(ingredientsdDiv);
+    for (let ingredient of recipe.ingredients) {
+      const ingredients = document.createElement("p");
+      ingredients.classList.add("ingredients_p");
+      ingredientsdDiv.appendChild(ingredients);
+      ingredients.textContent = "- " + ingredient;
+    }
+    ingredientsButton.addEventListener("click", () => {
+      ingredientsdDiv.classList.toggle("visible_ingredients");
+    });
+  }
+};
+createCards();

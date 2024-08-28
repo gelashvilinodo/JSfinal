@@ -455,9 +455,97 @@ li a:hover {
 }
 
 #recipeCardContainer {
-    padding: 0 30px;
-    background-color: var(--mainBGcolor);
+    padding: 50px 58px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+    background-color: transparent;
 }
+
+.recipe_card {
+    padding: 8px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 20px;
+    background-color: rgb(111, 143, 60);
+    transition: all .8 linear;
+}
+
+.recipe_card:hover {
+    box-shadow: 0 0 5px 2px rgb(247, 104, 104);
+
+}
+
+.recipe_image_div {
+    width: 100%;
+}
+
+.recipe_image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.recipe_text_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.recipe_name {
+    font-size: larger;
+    font-weight: 700;
+    font-family: var(--inter);
+    color: white;
+}
+
+.recipe_category {
+    font-size: large;
+    font-weight: 500;
+    font-family: var(--inter);
+    color: white;
+}
+
+.ingr_btn {
+    padding: 7px;
+    border: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: var(--button_tittlecolor);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-family: var(--inter);
+    transition: all .05s linear;
+}
+
+.ingr_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 3px black;
+}
+
+.ingredients_div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    display: none;
+}
+
+.visible_ingredients {
+    display: block;
+}
+
+.ingredients_p {
+    font-family: var(--inter);
+    font-size: 14px;
+    color: white;
+}
+
+
 
 /* contact page  */
 
