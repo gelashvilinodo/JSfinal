@@ -676,6 +676,17 @@ li a:hover {
     color: var(--secondaryTextColor);
 }
 
+.invalid_message {
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+    display: none;
+}
+
+.invalid_regex + .invalid_message {
+    display: block;
+}
+
 .contactBTN {
     display: flex;
     align-items: center;

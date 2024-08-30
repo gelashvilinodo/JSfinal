@@ -231,20 +231,27 @@
                 type="text"
                 name="name"
                 placeholder="Name"
-                class="name_input"
+                class="name_input regex_input"
               />
+              <p class="invalid_message">
+                name must be contain between 2 and 20 characters
+              </p>
               <input
                 type="email"
-                name="EMAIL"
+                name="email"
                 placeholder="Email"
-                class="email_input"
+                class="email_input regex_input"
               />
+              <p class="invalid_message">email must conrain "@", "."</p>
               <input
                 type="password"
                 name="password"
-                class="password_input"
+                class="password_input regex_input"
                 placeholder="password"
               />
+              <p class="invalid_message">
+                password must contain more than 8 characters and numbers
+              </p>
               <button type="submit" class="contactBTN">REGISTER</button>
             </form>
             <div class="socials">

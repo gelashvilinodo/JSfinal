@@ -173,3 +173,27 @@ sorting.addEventListener("change", async (e) => {
   recipeContainer.innerHTML = "";
   createCards(findCuisine);
 });
+
+// regex
+
+const regexInput = document.querySelectorAll(".regex_input");
+
+const patterns = {
+  name: /^[a-z\d]{2,20}$/i,
+  email: /^[a-zA-Z0-9.*%±]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}/,
+  password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+};
+
+function inputValidation(field, regex) {
+  if (!regex.test(field.value)) {
+    field.className = "invalid_regex";
+  } else {
+    field.classList.remove("invalid_regex");
+  }
+}
+
+for (let input of regexInput) {
+  input.addEventListener("change", (e) => {
+    inputValidation(e.target, patterns[e.target.name]);
+  });
+}
