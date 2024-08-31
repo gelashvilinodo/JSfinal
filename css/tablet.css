@@ -124,7 +124,7 @@
     /* header  */
 
     header {
-        padding-inline: 8px;
+        padding-inline: 28px;
     }
 
     .burger,
@@ -135,8 +135,7 @@
     }
 
     .logo {
-        width: 40px;
-        height: 40px;
+        font-size: 30px;
     }
 
     .user_side {
@@ -144,30 +143,68 @@
     }
 
     .dark_mode_icons {
-        width: 34px;
-        height: 34px;
+        width: 33px;
+        height: 33px;
         font-size: 18px;
     }
 
+    /* section 1 cover  */
 
-    /* section 1 */
-
-    .guitar_types {
-        padding-block: 16px;
+    .cover {
+        height: 250px;
     }
-
-    .guitars {
-        padding: 8px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    /* cover  */
 
     .coverp,
     .coverSpan {
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .cover_buttonss {
+        top: 150px;
+    }
+
+    .coverBTN {
+        padding: 10px;
+    }
+
+    .coverBTN img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* API CARDS  */
+
+    .recipe_cards {
+        padding: 28px 20px;
+    }
+
+    #search {
+        height: 28px;
+        width: 40%;
+        font-size: 14px;
+    }
+
+    #category {
+        height: 28px;
+        width: 40%;
+        font-size: 14px;
+    }
+
+    #recipeCardContainer {
+        padding: 28px 30px;
+    }
+
+    .recipe_card {
+        width: 48%;
+    }
+
+    .recipe_name {
+        font-size: medium;
+    }
+
+    .recipe_category {
+        font-size: 16px;
     }
 
     /* section 6 form  */
@@ -184,20 +221,6 @@
 
     .home_form_div {
         width: 320px;
-
-    }
-
-    /* catalog page  */
-
-    /* section 2 */
-
-    .filters_div {
-        padding-inline: 16px;
-    }
-
-    .filterBTNtext,
-    .sorting_text {
-        display: none;
     }
 
     /* grid  */

@@ -186,14 +186,14 @@ const patterns = {
 
 function inputValidation(field, regex) {
   if (!regex.test(field.value)) {
-    field.className = "invalid_regex";
+    field.classList.add("invalid_regex");
   } else {
     field.classList.remove("invalid_regex");
   }
 }
 
 for (let input of regexInput) {
-  input.addEventListener("change", (e) => {
+  input.addEventListener("keyup", (e) => {
     inputValidation(e.target, patterns[e.target.name]);
   });
 }
